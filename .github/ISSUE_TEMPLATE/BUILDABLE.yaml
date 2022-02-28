@@ -1,0 +1,19 @@
+name: Test the Buildable Flow
+description: Test the Buildable Flow by adding yourself to README
+title: "[BUILDABLE]: "
+labels: ["Buildable"]
+assignees:
+  - AykutSarac
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Create your own flow at [Buildable.dev](https://buildable.dev)!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to add your GitHub name to README file of this repository
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
