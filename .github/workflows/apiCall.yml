@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Make an api call
         run: 
-          curl https://api.buildable.dev/flow/v1/call/live/issue-commentor-fcfe28c81a
+          curl ${{secrets.BUILDABLE_ENDPOINT}}
