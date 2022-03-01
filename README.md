@@ -1,4 +1,4 @@
-# Issue Contributor
+# Issue Contributor :zap:
 This is a simple flow made on Buildable, fetches the user that created the issue, the GitHub action runs and adds the user to the README file.
 
 ## How to add yourself to the README?
