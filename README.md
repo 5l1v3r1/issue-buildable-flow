@@ -14,4 +14,3 @@ This is a simple flow made on Buildable, fetches the user that created the issue
 
 | Contributors |
 | :---: |
-| [AykutSarac](https://github.com/AykutSarac) |
