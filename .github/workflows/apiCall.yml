@@ -13,3 +13,12 @@ jobs:
       - name: Make an api call
         run: 
           curl ${{secrets.BUILDABLE_ENDPOINT}}
+  label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Label issues
+        uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: "Buildable"
