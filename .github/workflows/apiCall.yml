@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Buildable.dev Issue Contributor
+name: Buildable.dev Issue Flow
 
 # Controls when the workflow will run
 on:
@@ -13,12 +13,16 @@ jobs:
       - name: Make an api call
         run: 
           curl ${{secrets.BUILDABLE_ENDPOINT}}
-  label_issues:
+  handle_issues:
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
-      - name: Label issues
+      - name: Label Issues
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
           add-labels: "Approved"
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          comment: Thanks for testing out, you are in the README now! 🎉
